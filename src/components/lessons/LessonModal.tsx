@@ -286,6 +286,7 @@ export function LessonModal({ mode, eventId, date, prefill }: LessonModalProps) 
             value={title}
             onChange={(e) => { titleEdited.current = true; setTitle(e.target.value); }}
             placeholder="np. Matematyka — Anna"
+            maxLength={120}
             error={!!errors.title}
           />
         </FormField>
