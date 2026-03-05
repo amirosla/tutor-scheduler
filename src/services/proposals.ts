@@ -204,6 +204,7 @@ function scoreCandidate(
   availability: Availability,
   durationMin: number,
 ): Proposal {
+  // Scoring: preferred +30, ok +10, avoid -5, adjacent +10/+5, round hour +3, early/late -5
   let score = 50; // base
   const reasons: string[] = [...candidate.reasons];
 
