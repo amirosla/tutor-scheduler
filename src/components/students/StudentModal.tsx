@@ -143,6 +143,7 @@ export function StudentModal({ mode, studentId }: StudentModalProps) {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            maxLength={100}
             placeholder="np. Anna Kowalska"
             autoFocus
             error={!!errors.name}
