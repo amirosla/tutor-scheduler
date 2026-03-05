@@ -1,5 +1,18 @@
 # Tutor Scheduler
 
+A modern scheduling app for tutors. Paste a student's availability message and the app automatically suggests the best lesson times — no API key required.
+
+**Stack:** React · TypeScript · Tailwind CSS · Zustand · Vite
+
+**Features:**
+- Weekly calendar grid (07:00–22:00, 30-min slots)
+- Student management with color coding and subject tags
+- One-off and recurring lessons with per-date exceptions and overrides
+- AI panel: paste a Polish-language availability message → offline parser extracts windows → scoring algorithm ranks time slots → ghost previews appear in the calendar
+- Student filter, mobile day view, LocalStorage persistence
+
+---
+
 Nowoczesna aplikacja do zarządzania grafikiem korepetycji z funkcją AI — na podstawie wiadomości od ucznia automatycznie proponuje pasujące terminy.
 
 ## Uruchomienie
