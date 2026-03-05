@@ -201,7 +201,7 @@ export function MessagePanel() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="np. Mogę wt i czw po 17, w sob rano też bym dała radę..."
-            rows={4}
+            rows={5}
             className="w-full px-3 py-2.5 text-sm bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none placeholder:text-slate-400 transition-colors"
             onKeyDown={(e) => {
               if (e.key === 'Enter' && e.metaKey) handleAnalyze();
