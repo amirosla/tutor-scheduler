@@ -46,6 +46,7 @@ export function Topbar() {
       <div className="flex items-center gap-1 bg-slate-50 rounded-xl p-1 border border-slate-100">
         <button
           onClick={goToPrevWeek}
+          aria-label="Poprzedni tydzień"
           className="p-1.5 rounded-lg hover:bg-white hover:shadow-sm transition-all text-slate-500 hover:text-slate-700"
         >
           <ChevronLeft size={16} />
@@ -65,6 +66,7 @@ export function Topbar() {
         </button>
         <button
           onClick={goToNextWeek}
+          aria-label="Następny tydzień"
           className="p-1.5 rounded-lg hover:bg-white hover:shadow-sm transition-all text-slate-500 hover:text-slate-700"
         >
           <ChevronRight size={16} />
