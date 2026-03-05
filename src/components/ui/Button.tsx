@@ -49,6 +49,7 @@ export function Button({
         focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1
         ${VARIANT_CLASSES[variant]}
         ${SIZE_CLASSES[size]}
+        ${fullWidth ? "w-full" : ""}
         ${className}
       `}
       disabled={disabled || loading}
