@@ -34,7 +34,7 @@ interface WeekCalendarProps {
 
 const TIME_SLOTS = getAllTimeSlots();
 const TOTAL_HEIGHT = TIME_SLOTS.length * PX_PER_SLOT;
-const NOW_INTERVAL = 60_000;
+const NOW_INTERVAL = 30_000;
 
 function getNowOffset(): number {
   const now = new Date();
