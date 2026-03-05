@@ -154,6 +154,12 @@ export function currentWeekMonday(): string {
   return toDateString(getWeekStart(new Date()));
 }
 
+/** Returns true if date falls on Saturday or Sunday */
+export function isWeekend(date: Date): boolean {
+  const d = getDay(date);
+  return d === 0 || d === 6;
+}
+
 /** Navigate weeks: offset = +1 or -1 */
 export function offsetWeek(weekStartStr: string, offset: number): string {
   const date = fromDateString(weekStartStr);
