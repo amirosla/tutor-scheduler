@@ -181,4 +181,8 @@ export const EXAMPLE_MESSAGES = [
     label: 'Codziennie po 19',
     text: 'Mogę codziennie po 19 oprócz piątku.',
   },
+  {
+    label: 'Sob lub nd, 2h',
+    text: 'Najlepiej weekend, sobota lub niedziela przed południem, 2 godziny.',
+  },
 ];
