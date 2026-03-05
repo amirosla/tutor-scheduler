@@ -89,7 +89,7 @@ export function ProposalList({
       )}
 
       {/* Proposals */}
-      <div className="space-y-2">
+      <div className="space-y-2" aria-live="polite" aria-atomic="false">
         {proposals.map((proposal, index) => {
           const isCreated = createdIds.has(proposal.id);
           const isExpanded = expandedId === proposal.id;
