@@ -31,6 +31,7 @@ const DAY_PATTERNS: Array<{ pattern: RegExp; dow: number }> = [
 
 const TIME_KEYWORDS: Array<{ pattern: RegExp; start: string; end: string }> = [
   { pattern: /\brano\b/i, start: '08:00', end: '11:00' },
+  { pattern: /\bprzedpołudni[eu]?\b/i, start: '09:00', end: '12:00' },
   { pattern: /\bpołudni[eu]?\b/i, start: '12:00', end: '14:00' },
   { pattern: /\bpopołudni[eu]?\b/i, start: '14:00', end: '18:00' },
   { pattern: /\bwieczor[eem]?\b/i, start: '18:00', end: '21:00' },
