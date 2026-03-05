@@ -67,7 +67,7 @@ export async function parseAvailabilityWithAI(
   text: string,
 ): Promise<{ availability: Availability; isAI: boolean; processingNote: string }> {
   // Simulate a short processing delay (makes UX feel more "AI-like")
-  await delay(600);
+  await delay(500);
 
   const availability = parseAvailability(text);
 
