@@ -18,6 +18,8 @@ const KEYS = {
   uiState: 'tutor_scheduler_ui',
 } as const;
 
+export const STORAGE_KEYS = KEYS;
+
 // ─── Generic helpers ──────────────────────────────────────────────────────────
 
 function readJson<T>(key: string, fallback: T): T {
