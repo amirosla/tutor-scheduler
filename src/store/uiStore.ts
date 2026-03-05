@@ -17,6 +17,7 @@ interface UIStore extends UIState {
   // Panel
   setActivePanel: (panel: PanelType) => void;
   togglePanel: (panel: PanelType) => void;
+  closePanel: () => void;
 
   // Filters
   setFilterStudent: (id: string | null) => void;
@@ -67,6 +68,8 @@ export const useUIStore = create<UIStore>((set) => ({
     })),
 
   setFilterStudent: (id) => set({ filterStudentId: id }),
+
+  closePanel: () => set({ activePanel: 'none' }),
   setSearchQuery: (q) => set({ searchQuery: q }),
   setSelectedStudent: (id) => set({ selectedStudentId: id }),
   setViewMode: (mode) => set({ viewMode: mode }),
