@@ -48,7 +48,12 @@ function ModalRouter() {
 export default function App() {
   const { loadFromStorage: loadStudents } = useStudentsStore();
   const { loadFromStorage: loadEvents } = useEventsStore();
-  const { calendarProposals, calendarProposalStudentId } = useUIStore();
+  const { calendarProposals, calendarProposalStudentId, currentWeekStart } = useUIStore();
+
+  useEffect(() => {
+    const weekStart = currentWeekStart.slice(0, 10);
+    document.title = `Tutor Scheduler · ${weekStart}`;
+  }, [currentWeekStart]);
 
   useEffect(() => {
     seedData();
